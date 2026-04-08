@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.env
+.venv
+env/
+venv/
+
+# Dataset images — track structure but not files
+dataset/gbif/**/*.jpg
+dataset/gbif/**/*.jpeg
+dataset/gbif/**/*.png
+dataset/gbif/**/*.tif
+dataset/gbif/**/*.tiff
+dataset/sem_manual/**/*.jpg
+dataset/sem_manual/**/*.jpeg
+dataset/sem_manual/**/*.png
+dataset/sem_manual/**/*.tif
+dataset/sem_manual/**/*.tiff
+dataset/mbari/**/*.jpg
+dataset/mbari/**/*.jpeg
+dataset/mbari/**/*.png
+dataset/mbari/**/*.tif
+dataset/mbari/**/*.tiff
+dataset/bhl/**/*.jpg
+dataset/bhl/**/*.jpeg
+dataset/bhl/**/*.png
+
+# Keep folder structure in git
+!dataset/gbif/.gitkeep
+!dataset/sem_manual/.gitkeep
+!dataset/mbari/.gitkeep
+!dataset/bhl/.gitkeep
+
+# Manifest is tracked 
+!dataset/manifest.json
+
+# CLIP embeddings and model outputs (large numpy/pickle files)
+embeddings/
+*.npy
+*.pkl
+*.pt
+*.pth
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
