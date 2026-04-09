@@ -2,6 +2,7 @@
 config.py
 Central configuration for all species, sources, categories, and image targets.
 Edit target counts or add species here — everything else reads from this file.
+Specimen and field photos from GBIF are collected with 'scrape_gbif.py', and SEM microscopy images are collected manually.
 """
 
 DATASET_ROOT = "dataset"
@@ -15,7 +16,7 @@ SPECIES_CONFIG = {
         "category": "evolutionary_continuity",
         "sources": ["gbif"],
         "gbif_taxon_key": 2441341,
-        "target_count": 30,
+        "target_count": 270,
         "preferred_image_types": ["specimen_photo", "field_photo"],
     },
     "limulus_polyphemus": {
@@ -23,7 +24,7 @@ SPECIES_CONFIG = {
         "category": "evolutionary_continuity",
         "sources": ["gbif"],
         "gbif_taxon_key": 1010610,
-        "target_count": 25,
+        "target_count": 72,
         "preferred_image_types": ["specimen_photo"],
     },
     "nautilus_pompilius": {
@@ -32,7 +33,7 @@ SPECIES_CONFIG = {
         # Both GBIF (specimen) and sem_manual (shell cross-section) — intentional dual register
         "sources": ["gbif", "sem_manual"],
         "gbif_taxon_key": 2289060,
-        "target_count": 25,
+        "target_count": 100,
         "preferred_image_types": ["specimen_photo", "sem_microscopy"],
     },
     # --- Extreme resilience ---
@@ -52,13 +53,21 @@ SPECIES_CONFIG = {
         "target_count": 20,
         "preferred_image_types": ["sem_microscopy", "light_microscopy"],
     },
+    "stromatolites": {
+        "common_name": "Stromatolites",
+        "category": "resilience",
+        "sources": ["sem_manual"],
+        "gbif_taxon_key": 68,
+        "target_count": 20,
+        "preferred_image_types": ["sem_microscopy", "light_microscopy"],
+    },
     # --- Individual longevity ---
     "pinus_longaeva": {
         "common_name": "Great Basin Bristlecone Pine",
         "category": "longevity",
         "sources": ["gbif"],
         "gbif_taxon_key": 5285258,
-        "target_count": 30,
+        "target_count": 72,
         "preferred_image_types": ["field_photo", "specimen_photo"],
     },
     "euplectella_aspergillum": {
@@ -75,7 +84,7 @@ SPECIES_CONFIG = {
         "category": "persistence",
         "sources": ["gbif"],
         "gbif_taxon_key": 8049341,
-        "target_count": 25,
+        "target_count": 66,
         "preferred_image_types": ["specimen_photo", "field_photo"],
     },
     "ginkgo_biloba": {
@@ -83,7 +92,7 @@ SPECIES_CONFIG = {
         "category": "persistence",
         "sources": ["gbif", "bhl"],
         "gbif_taxon_key": 2687885,
-        "target_count": 25,
+        "target_count": 52,
         "preferred_image_types": ["specimen_photo", "botanical_illustration"],
     },
 }

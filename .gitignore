@@ -33,6 +33,9 @@ dataset/mbari/**/*.tiff
 dataset/bhl/**/*.jpg
 dataset/bhl/**/*.jpeg
 dataset/bhl/**/*.png
+dataset/curated/**/*.jpg
+dataset/curated/**/*.jpeg
+dataset/curated/**/*.png
 
 # Keep folder structure in git
 !dataset/gbif/.gitkeep
