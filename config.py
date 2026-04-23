@@ -1,5 +1,4 @@
 """
-config.py
 Central configuration for all species, sources, categories, and image targets.
 Edit target counts or add species here — everything else reads from this file.
 Specimen and field photos from GBIF are collected with 'scrape_gbif.py', and SEM microscopy images are collected manually.

@@ -1,5 +1,4 @@
 """
-manifest.py
 Shared utility for reading/writing manifest.json.
 All scrapers import from here — never write manifest.json directly.
 

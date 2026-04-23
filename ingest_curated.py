@@ -1,6 +1,7 @@
-# ingest_curated.py
-# Register manually curated images into manifest.
-# Run after dropping images into dataset/curated/species_key/
+"""
+Register manually curated images into manifest.
+Run after dropping images into dataset/curated/species_key/
+"""
 
 from pathlib import Path
 

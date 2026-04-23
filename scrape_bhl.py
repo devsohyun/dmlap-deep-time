@@ -2,8 +2,7 @@
 Downloads botanical illustration plates from the Biodiversity Heritage Library.
 Targets: ginkgo, ferns, and the Haeckel reference archive.
 
-Register for a free BHL API key at: https://www.biodiversitylibrary.org/api2/docs
-Then set BHL_API_KEY in config.py.
+Set BHL_API_KEY in config.py that you get from the BHL website.
 
 Usage:
     python scrape_bhl.py

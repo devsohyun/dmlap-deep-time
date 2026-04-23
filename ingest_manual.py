@@ -1,12 +1,7 @@
 """
 Register hand-curated images (SEM microscopy, MBARI stills) into the manifest.
 
-For tardigrade, cyanobacteria, and glass sponge — where automated scraping
-doesn't work well — you download images manually from:
-  - Tardigrade SEM:    https://www.ebi.ac.uk/biostudies  (search "tardigrade SEM")
-  - Cyanobacteria:     https://www.ncbi.nlm.nih.gov/pmc  (filter by image type)
-  - Glass Sponge:      https://www.mbari.org/data/        (MBARI video archives)
-
+For automated scraping doesn't work well for certain species/sources.
 Then drop them into the appropriate folder and run this script to register them.
 
 Usage:

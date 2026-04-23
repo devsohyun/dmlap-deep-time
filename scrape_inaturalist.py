@@ -1,5 +1,4 @@
 """
-scrape_inaturalist.py
 Downloads verified observation photos from iNaturalist.
 No API key required for read-only access.
 

@@ -1,5 +1,4 @@
 """
-embed_images.py
 Encode all images in manifest.json through CLIP and save embeddings.
 
 Produces:
