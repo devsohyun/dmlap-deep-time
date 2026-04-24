@@ -7,7 +7,8 @@ Specimen and field photos from GBIF are collected with 'scrape_gbif.py', and SEM
 DATASET_ROOT = "dataset"
 
 # This is what gets written into manifest.json
-# can check taxon key manually with the url https://www.gbif.org/species/YOUR_TAXON_KEY
+# Each species has a unique taxon key
+# The taxon keys were manually checked with the url https://www.gbif.org/species/YOUR_TAXON_KEY
 SPECIES_CONFIG = {
     # --- Evolutionary continuity (living fossils) ---
     "crocodylus_niloticus": {
@@ -92,13 +93,9 @@ SPECIES_CONFIG = {
         "sources": ["gbif", "bhl"],
         "gbif_taxon_key": 2687885,
         "target_count": 52,
-        "preferred_image_types": ["specimen_photo", "botanical_illustration"],
+        "preferred_image_types": ["specimen_photo"],
     },
 }
-
-# BHL items worth pulling for the Haeckel reference archive
-# These are BHL title IDs for Haeckel's Kunstformen der Natur
-BHL_HAECKEL_TITLE_IDS = [49157, 49158]  # Verify these against BHL API
 
 BHL_API_KEY = (
     "45b71991-ad6b-421d-a85b-b5783145d382"  # Register free at biodiversitylibrary.org

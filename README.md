@@ -49,12 +49,12 @@ This project investigates whether machine learning can detect patterns of deep-t
 
 | Script | What it does |
 |---|---|
-| `config.py` | Central configuration file — stores shared settings such as folder paths and species lists used across other scripts |
-| `manifest.py` | Scans all images in `dataset/` and generates `manifest.json`, a structured index of every image with metadata (species, source, filename) |
-| `clean_manifest.py` | Removes broken or duplicate entries from `manifest.json`; useful to run after adding or deleting images |
-| `scrape_gbif.py` | Downloads occurrence images for each species from [GBIF](https://www.gbif.org/) using the API, filtered by taxon key |
+| `config.py` | Central configuration. Species list, taxon keys, target image counts, source assignments, conceptual categories |
+| `manifest.py` | Shared utility for reading and writing manifest.json. All scrapers import from here. Also runs directly to print dataset summary by species, category, source, and image type |
+| `clean_manifest.py` | Removes entries from `manifest.json` where the file no longer exists on disk. Run after manually rejecting/moving bad images |
+| `scrape_gbif.py` | Downloads occurrence images from [GBIF](https://www.gbif.org/) API filtered by taxon key and image availability |
 | `scrape_inaturalist.py` | Downloads research-grade observation images from [iNaturalist](https://www.inaturalist.org/); used as a fallback where GBIF returns limited or poor-quality results |
 | `manual_gbif.py` | *(please confirm)* Handles manual or targeted GBIF downloads outside the main scraper — possibly for specific taxon keys or one-off corrections? |
-| `ingest_curated.py` | *(please confirm)* Similar to `ingest_manual.py` but for the `dataset/curated/` folder — bristlecone pine and similar hand-collected images? |
+| `ingest_curated.py` | Registers hand-picked images dropped into `dataset/curated/`. Used for species where scraped images were insufficient (mainly bristlecone pine, ginkgo) |
 | `embed_images.py` | Encodes all images in the dataset using CLIP, generating vector embeddings saved to the `embeddings/` folder |
-| `visualise_umap.py` | Loads embeddings and runs UMAP dimensionality reduction, producing a 2D visualisation of how species cluster in latent space |
+| `visualise_umap.py` | Loads embeddings, runs UMAP reduction to 2D, produces three plots — by species, by category, by image type |
