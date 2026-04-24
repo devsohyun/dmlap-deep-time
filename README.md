@@ -109,6 +109,8 @@ Generated images are produced using [Stable Diffusion](https://huggingface.co/st
 3. Mount your Google Drive and set `generatingClusterType` to match your chosen k value
 4. Run all cells. Generated images are saved to `DeepTime/generated/{k}/` in your Drive
 
+More information can be view in the [Notebook](https://github.com/devsohyun/dmlap-deep-time/blob/main/diffusion_txt2img.ipynb).
+
 ## Dataset
 
 229 images across 10 species, collected from scientific archives. Images were evaluated individually for visual register — whether they foreground morphological structure over environmental context.
