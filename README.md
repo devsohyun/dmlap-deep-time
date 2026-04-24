@@ -1,5 +1,6 @@
 # Lineage of Endurance
 A Machine Interpretation of Survival. Data & Machine Learning project for the MA Computational Arts programme at Goldsmiths.
+Github repository can be viewed [here](https://github.com/devsohyun/dmlap-deep-time).
 
 ## About
 
