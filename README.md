@@ -34,7 +34,7 @@ This project investigates whether machine learning can detect patterns of deep-t
 ```
    > Note: CLIP installation may require an additional step — see [OpenAI CLIP](https://github.com/openai/CLIP) for details.
 
-4. Download the image dataset from [SharePoint](https://goldsmithscollege-my.sharepoint.com/:f:/g/personal/sjun002_campus_goldsmiths_ac_uk/IgAtbNCp7uZ6Tr9rvG2sQPP8AaFdfZDH9V-ipMl7s4cijjI?e=t4oEPg) and place the contents directly into the `dataset/` folder. The expected folder structure is:
+4. Download the image dataset from [Google Drive](https://drive.google.com/drive/folders/1tvLZoxTAkMLPGaGNYZUHvmIT0Ta-KD79?usp=drive_link) and place the contents directly into the `dataset/` folder. The expected folder structure is:
 
 ```
    dataset/
