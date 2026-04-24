@@ -53,6 +53,9 @@ embeddings/
 *.pt
 *.pth
 
+# Stable Diffusion generated images (manually saved)
+generated/
+
 # OS
 .DS_Store
 Thumbs.db
